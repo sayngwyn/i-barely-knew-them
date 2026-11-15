@@ -1,0 +1,10 @@
+.venv/
+test-env/
+dist/*
+!dist/nexus-upload/
+dist/nexus-upload/header.nexus.png
+__pycache__/
+.pytest_cache/
+tests/logs/
+tests/reports/
+tests/pics/

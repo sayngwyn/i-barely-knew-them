@@ -1,0 +1,38 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://qconsulting.ca/fo3/ModConfig5.0.xsd">
+  <moduleName>I Barely Knew Them</moduleName>
+  <installSteps order="Explicit">
+    <installStep name="How well must they know you?">
+      <optionalFileGroups order="Explicit">
+        <group name="Relationship rank needed" type="SelectExactlyOne">
+          <plugins order="Explicit">
+            <plugin name="Friend (the base game)">
+              <description>Anyone at Friend rank or higher who dies sends you a letter and gold. This is how Skyrim works without the mod. Choose it to keep the base game's behaviour (and to switch back).</description>
+              <files><file source="plugins\I Barely Knew Them - Friend.esp" destination="I Barely Knew Them - Friend.esp" priority="0"/></files>
+              <typeDescriptor><type name="Recommended"/></typeDescriptor>
+            </plugin>
+            <plugin name="Confidant">
+              <description>Only Confidants, Allies and Lovers send letters. Inheritances are bigger, because gold grows with the rank.</description>
+              <files><file source="plugins\I Barely Knew Them - Confidant.esp" destination="I Barely Knew Them - Confidant.esp" priority="0"/></files>
+              <typeDescriptor><type name="Optional"/></typeDescriptor>
+            </plugin>
+            <plugin name="Ally">
+              <description>Only Allies and Lovers send letters.</description>
+              <files><file source="plugins\I Barely Knew Them - Ally.esp" destination="I Barely Knew Them - Ally.esp" priority="0"/></files>
+              <typeDescriptor><type name="Optional"/></typeDescriptor>
+            </plugin>
+            <plugin name="Lover">
+              <description>Only Lovers (people you are married to) send letters.</description>
+              <files><file source="plugins\I Barely Knew Them - Lover.esp" destination="I Barely Knew Them - Lover.esp" priority="0"/></files>
+              <typeDescriptor><type name="Optional"/></typeDescriptor>
+            </plugin>
+            <plugin name="Off">
+              <description>Nobody sends inheritance letters or gold. Nothing else changes: the Hall of the Dead still gets its coffins.</description>
+              <files><file source="plugins\I Barely Knew Them - Off.esp" destination="I Barely Knew Them - Off.esp" priority="0"/></files>
+              <typeDescriptor><type name="Optional"/></typeDescriptor>
+            </plugin>
+          </plugins>
+        </group>
+      </optionalFileGroups>
+    </installStep>
+  </installSteps>
+</config>
